@@ -1,10 +1,246 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f8f8f8;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* reseteo para todo en general */s
+}
+
+/* Estilo basico de todtoda lA WEB (GENERAL) */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background: #dfdfdf;
+  color: #222;
+  text-align: center;
+  line-height: 1.6;
+
+}
+
+/* BARRA DE NAVEGACIÓN */
+.header {
+  background: #111;
+  color: white;
+  padding: 10px 20px;
+  /* barra superior, fondo negro !! meter padding para que no este todo pegado */
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  /* flex para separar logo y meni, y centrar todo */
+}
+
+/*  /* quitar ALVARO */
+/*.logo {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+ }*/
+
+/* MENÚ DE ARRIBA */
+.nav-list {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  font-size: 14px;
+  
+}
+
+.nav-list li a {
+  color: white;
+  transition: 0.3s;
+  /* links blancos con transición suave */
+}
+
+
+/* cambio de color cuando pasas el raton por el menu principal*/
+.nav-list li a:hover {
+  color: #e42e2e;
+  
+}
+
+/* MARCO NEGRO (PORTADA) */
+.header-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  background: #111;
+  color: white;
   padding: 20px;
 }
 
-h1 {
-  color: #333;
+
+  /* estilo de las fotos para toda la web ((border radius para las fotos redonditas)) */
+.header-content img {
+  width: 250px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* SECCIONES GENERALES */
+section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h2 span {
+  color: #e42e2e;
+}
+
+/* SOBRE MÍ */
+.sobre-mi .sobre-mi-text {
+  margin-bottom: 20px;   /* separa el texto de las imagenes */
+
+}
+
+
+.sobre-mi div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+  /* galería fila y adaptada*/
+
+
+.sobre-mi img {
+  width: auto; /*alinear imagenes por altura yu fxs */
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+}
+
+ /* ZOOM para las imagenes */
+.sobre-mi img:hover {
+  transform: scale(1.05);
+}
+
+
+/* SERVICIOS */
+
+  /* trabajos en fila y adaptado por si no caben */
+.otros-servicios ul {
+  display: flex; /* para que quepan */
+  justify-content: center;
+  flex-wrap: wrap;   
+  gap: 15px;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.otros-servicios img {  /* GENERAL para que este uniforma */
+  width: auto;
+  height: 300px; /* 300pixeles para que esten al mismo tamaño que las otras fotos y no se vean pequeñas */
+  border-radius: 10px;
+  transition: transform 0.3s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+ 
+}
+
+.otros-servicios img:hover {
+  transform: scale(1.05);
+}
+
+/* VIDEO FINAL */
+.videos-promocionales video {
+  width: 200px;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* CONTACTO */
+
+/* separador */
+.contacto {
+  margin-top: 40px;
+}
+
+/* formularioa */
+
+.contact-form {
+  display: flex;
+  flex-direction: column; /* centrado en columna para el formulario */
+
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.contact-form input, /* estretica de cajitas */
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #161616; /* linea de contorno */
+  border-radius: 5px;
+}
+
+.contact-form button { /* boton de ENVIAR */
+  padding: 10px;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  background: #9e9e9e; /* cambio de color al pasar el raton (Gris o ROJO) pensar */
+  color: #111;
+}
+
+/* RESPONSIVE (MÓVIL) */
+
+
+/* MENU de arriba */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+      /*esto para las fotos que se pongan en linea*/
+
+  .sobre-mi div,
+  .otros-servicios ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sobre-mi img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .otros-servicios img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+
+  .header-bg {     /* hacer pequeño el header */
+    min-height: 50vh;
+  }
 }

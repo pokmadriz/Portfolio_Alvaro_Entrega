@@ -7,41 +7,75 @@
   <link href="0. Images/0. Face Cartoon Outtlaw.jpg" rel="icon" type="image/jpeg">
 
   <!--CSS-->
-   <link rel="stylesheet" href="style.css"
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!--menu de navegacion arriba-->
   <header class="header">
     <nav class="nav">
-        <a href="#" class="logo">ÁLVARO</a> <!--Logo POK-->
+        <a href="#" class="logo"></a> <!--Logo POK-->
         <ul class="nav-list">
-            <li><a href="#Sobre Mí">SOBRE MÍ</a></li>
-            <li><a href="#Proyectos">PROYECTOS</a></li>
-            <li><a href="#Contacto">CONTACTO</a></li>
+            <li><a href="#sobre-mi">SOBRE MÍ</a></li>
+            <li><a href="#otros-servicios">PROYECTOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
         </ul>
     </nav>
-    <div id="home" class="header-bg"
+    <div id="home" class="header-bg">
         <div class="header-content">
             <h1>Álvaro Martín</h1>
             <p>Graphic Designer & Creative Director</p>
-            <img src="0. Images/260317_Coolours00127_evoto_edited.jpg"
+            <img src="0. Images/260317_Coolours00127_evoto_edited.jpg" />
            <!-- <a href="#projects" class="btn">Ver Proyectos</a> REVISAR --> 
         </div>
   </header>
 
-  <section id="Sobre Mí" class="Sobre Mí">
-    <div class="Sobre Mí-text">
-        <h2>Mi Trabajo <span></h2>
+  <section id="sobre-mi" class="sobre-mi">
+    <div class="sobre-mi-text">
+        <h2>SOBRE MÍ <span></h2>
             <h3>
-                Encantado, soy Álvaro MArtín, Diseñador Gráfico desde el 2012 y Director Creativo desde el 2024. Aquí encntraras un pequeño resumen sobre mi trayectoria como Diseñador. Actualmente, trabajo como Director Creativo enla marca de ropa OUTTLAW, como Diseñador Gráfico para múltipleas artistas musicales.
+                Soy Álvaro Martín, Diseñador Gráfico desde el 2012 y Director Creativo desde el 2024. Aquí encontrarás un pequeño resumen sobre mi trayectoria como Diseñador. Actualmente, trabajo como Director Creativo en la marca de ropa OUTTLAW, como Diseñador Gráfico para múltiples artistas musicales.
             </h3>
     </div>
     <div> <!--meter diseños VAS POR AQUI ALVARO DEL FUTURO-->
-        <img src="" alt="X" /> <!--meter texto a la imagen-->
+        <img src="0. Images/PUF 1.jpg" alt="DENOM PUFFER" /> <!--meter texto a la imagen--> <!--src= imagen, alt= texto-->
+        <img src="0. Images/2. Mockup_Chandal_Resak_2_Dorado.jpg" alt="RESAK TRACKSUIT" />
+        <img src="0. Images/Y. Crome_2.jpg" alt="LOGO KRKN" />
     </div>
   </section>
 
-   
+  <!--diseños generales del portfolio-->
+
+  <section id="otros-servicios" class="otros-servicios">
+    <h2>SERVICIOS <span> </h2>
+    <ul class="portfolio de diseños">
+       <!-- <li> <img src="0. Images/Cartel.jpg" /> </li> Este no se por que no me funciona-->
+        <li> <img src="0. Images/Ropa.jpg" /> </li> <!--continido para rrss-->
+        <li> <img src="0. Images/IMG_9486.jpg" /> </li> <!--director creativo de eventos-->
+        <li> <img src="0. Images/Cartel 3.jpg" /> </li> <!--shootings de modelos-->
+
+    </ul>
+    <ul class="videos promocionales">
+         <li>
+            <video controls autoplay>
+                <source src="0. Images/TEASSER 2.mp4" type="video/mp4">
+            </video>
+         </li>
+        
+    </ul>
+  </section>
+
+   <section id="contacto" class="contacto">
+    <h2>CONTACTO 
+        <span></h2>
+    <p>Enviame un correo, y empezamos a trabajar en tu próximo proyecto</p>
+    <form class="contact-form">
+        <input type="text" placeholder="Nombre y Apellidos" required />
+        <input type="email" placeholder="Correo Electrónico" required />
+        <textarea placeholder="Hablame sobre tu proyecto..." required></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+  </section>
+
 </body>
 </html>
