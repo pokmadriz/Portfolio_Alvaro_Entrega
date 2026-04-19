@@ -2,10 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* reseteo para todo en general */s
+  /* reseteo para todo en general */
 }
 
-/* Estilo basico de todtoda lA WEB (GENERAL) */
+/* Estilo básico de toda la WEB (GENERAL) */
 body {
   font-family: Helvetica, Arial, sans-serif;
   background: #dfdfdf;
@@ -155,7 +155,7 @@ h2 span {
 }
 
 /* VIDEO FINAL */
-.videos-promocionales video {
+.videos video {
   width: 200px;
   border-radius: 10px;
   margin-top: 20px;
